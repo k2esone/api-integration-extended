@@ -8,17 +8,11 @@ import {CatFact, CATS_API_BASE_URL, CATS_API_ENDPOINT_FACTS_RANDOM} from "./cats
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'api-integration';
+  title = 'j133-api-integration';
   odpowiedzSerwera: string = "";
 
   constructor(private httpClient: HttpClient) {
   }
-
-  // odbierzWynik(wynik: CatFact): void {
-  //   this.odpowiedzSerwera = "cos innego"
-  //   // console.log("Wynik:")
-  //   // console.log(wynik)
-  // }
 
   wywolajZapytanie(): void {
     console.log('Hello my Frontend world!')

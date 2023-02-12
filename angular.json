@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "api-integration": {
+    "j133-api-integration": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/api-integration",
+            "outputPath": "dist/j133-api-integration",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -27,9 +27,12 @@
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.css"
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "src/jumbotron.css"
             ],
             "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "@popperjs/core/dist/umd/popper.js",
               "node_modules/bootstrap/dist/js/bootstrap.js"
             ]
           },
@@ -64,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "api-integration:build:production"
+              "browserTarget": "j133-api-integration:build:production"
             },
             "development": {
-              "browserTarget": "api-integration:build:development"
+              "browserTarget": "j133-api-integration:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "api-integration:build"
+            "browserTarget": "j133-api-integration:build"
           }
         },
         "test": {
@@ -101,6 +104,6 @@
     }
   },
   "cli": {
-    "analytics": "06657b79-c2e7-4dff-a492-e035d5c6a992"
+    "analytics": "9eb82e59-9647-40a2-aedc-0583e5e9b8b2"
   }
 }
